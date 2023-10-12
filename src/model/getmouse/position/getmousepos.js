@@ -1,0 +1,1 @@
+var robot = require("robotjs"); var ext = require("exit");console.log(robot.getMousePos()); setTimeout(() => { ext(5); }, 1000);

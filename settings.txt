@@ -1,0 +1,79 @@
+// npm install -g electron-packager 
+// electron-packager /d/node/bot BOT --platform=win32 --arch=x64
+// iohook npm for electron to get mouse position
+// linkedin username box is x 132 y 314
+// ctrl+q to open inspect element
+// ctrl+e to close inspect element
+// ctrl+u to copy url of window to clip board
+// ctrl+o to paste clipboard in node
+# Check the element exists in dom or not and copy outout to clipboard
+//check account already login and copy result to clip
+var obj = document.getElementsByClassName("member-profile__details");copy(obj?.length);
+
+//if account already login then click on 3 dots
+var btn = document.getElementsByClassName("more-actions-btn");btn[0]?.click();
+
+
+// find the remove account and click on first one
+var icon_list = document.querySelectorAll(".body__banner-icon");
+icon_list.forEach(item => { if(item.parentNode.getAttribute("data-cie-control-urn") === "remove_account"){ item.parentNode.click(); } });
+
+var x = 0;
+var intervalID = setInterval(function () {
+    request_send[x].click();
+   if (++x === 8) {
+       window.clearInterval(intervalID);
+   }
+}, 1000);
+
+ctrl + j to send link to preload
+
+//few more assumtions
+//no bookmark boar
+//snipping tool must be installed and its cordinates will be set in settings
+//python installed and path set
+//robotjs installed
+//node version v16.10.0
+//npm version 7.24.0
+//xamp installed and root password set
+config.inc
+//$cfg['Servers'][$i]['auth_type'] = 'config';
+//$cfg['Servers'][$i]['user'] = 'root';
+//$cfg['Servers'][$i]['password'] = 'Aa@12345';
+//$cfg['Servers'][$i]['extension'] = 'mysqli';
+//$cfg['Servers'][$i]['AllowNoPassword'] = true;
+//package.json
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . BOT --platform=win32 --arch=x64"
+  },
+  "author": "Navin Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "clipboardy": "^3.0.0",
+    "copy-paste": "^1.3.0",
+    "electron-packager": "^17.1.1",
+    "exit": "^0.1.2",
+    "fs": "^0.0.1-security",
+    "mssql": "^9.0.1",
+    "mysql": "^2.18.1",
+    "open": "^8.4.0",
+    "robotjs": "^0.6.0"
+  }
+}
+
+//create snipping tool shortcut at desktop
+//just create new shortcut type snipping tool in file location
+//after creation of shortcut just again goto properties of shortcut created
+//in shortcut properties just press ctrl+shift+s 

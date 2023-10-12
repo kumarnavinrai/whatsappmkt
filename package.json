@@ -1,0 +1,29 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . BOT --platform=win32 --arch=x64"
+  },
+  "author": "Navin Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "clipboardy": "^3.0.0",
+    "copy-paste": "^1.3.0",
+    "electron-packager": "^17.1.1",
+    "exit": "^0.1.2",
+    "fs": "^0.0.1-security",
+    "mssql": "^9.0.1",
+    "mysql": "^2.18.1",
+    "open": "^8.4.0",
+    "robotjs": "^0.6.0"
+  }
+}

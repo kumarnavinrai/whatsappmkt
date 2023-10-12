@@ -1,0 +1,1 @@
+console.log("task 2 file was deleted");console.log("task 2 file")
